@@ -7,17 +7,8 @@
 
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-    // Variavel do nome do usuario
+    // Varável do usuario
     char nome[50];
 
     //Variaveis das carta 1
@@ -25,11 +16,12 @@ int main() {
     int populacao1, populacao2 , pontost1, pontost2;
     float area1 , area2, pib1 , pib2 ;
 
-    //Cadstro do nome do ususario
-    printf(" Olá usuario: Qual o seu nome:");
+    //Cadstro do nome do ususario:
+    printf(" Olá usuario: Qual é o seu nome:");
     scanf("%s" , &nome);
     printf("\nSeja bem-vindo: %s\n" , nome);
 
+     //Cadatro das Cartas:
     //Carta 1
     printf("\n---- Carta 1 ----\n");
     printf("Digite o codigo  da carta (ex: A01 , B03): ");
@@ -49,7 +41,7 @@ int main() {
 
     //Carta 2
      printf("\n---- Carta 2 ----\n");
-    printf("Digite o codigo  da carta (ex: A01 , B03): ");
+    printf("Digite o código  da carta (ex: A01 , B03): ");
     scanf("%s" , codcart2);
     printf("Digite o nome do estado:");
     scanf("%s" , estado2);
@@ -66,23 +58,15 @@ int main() {
 
 
 
-    //Exibir as informações das cartas
+    //Exibição dos Dados das Cartas:
 
-    printf(" \n-- Carta 1:--\n Codigo: %s\n Estado: %s\n Cidade: %s\n População: %d\n Aréa: %f\n PIB: %f\n Pontos Turísticos %d  " , codcart1 , estado1 , city1 , populacao1 , area1 , pib1  , pontost1 );
+    printf(" \n-- Carta 1:--\n Código: %s\n Estado: %s\n Cidade: %s\n População: %d\n Área: %f\n PIB: %f\n Pontos Turísticos %d  " , codcart1 , estado1 , city1 , populacao1 , area1 , pib1  , pontost1 );
 
-    printf(" \n-- Carta 2: --\nCodigo: %s\n Estado: %s\n Cidade: %s\n População: %d\n Aréa: %f\n PIB: %f\n Pontos Turísticos %d  " , codcart2 , estado2 , city2 , populacao2  ,area2 ,pib2 , pontost2);
-
-
+    printf(" \n-- Carta 2: --\nCódigo: %s\n Estado: %s\n Cidade: %s\n População: %d\n Área: %f\n PIB: %f\n Pontos Turísticos %d  " , codcart2 , estado2 , city2 , populacao2  ,area2 ,pib2 , pontost2 );
 
 
+    //Fim do programa:
 
-
-
-    //
-
-
-
-
-    printf("\nFim do programa\n");
+    printf("\nFim do programa!\n");
     return 0;
 }
